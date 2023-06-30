@@ -1,7 +1,7 @@
 import React from 'react';
 
-const DashBoard = () => {
-  return <div>DashBoard</div>;
+const index = () => {
+  return <div>index</div>;
 };
 
-export default DashBoard;
+export default index;
