@@ -1,10 +1,10 @@
 import { colorModeContext, useMode } from './theme';
 import { CssBaseline, ThemeProvider } from '@mui/material';
-import { Routes, Route } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
 
 import TopBar from './scenes/global/TopBar';
 
-import Dashboard from './scenes/dashboard';
+// import Dashboard from './scenes/dashboard';
 import NavBar from './scenes/global/NavBar';
 // import Team from './scenes/Team';
 // import Invoices from './scenes/Invoices';
