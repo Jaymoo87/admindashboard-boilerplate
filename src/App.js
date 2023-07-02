@@ -1,14 +1,14 @@
 import { colorModeContext, useMode } from './theme';
 import { CssBaseline, ThemeProvider } from '@mui/material';
-import { Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import TopBar from './scenes/global/TopBar';
 
-// import Dashboard from './scenes/dashboard';
+import Dashboard from './scenes/dashboard';
 import NavBar from './scenes/global/NavBar';
-// import Team from './scenes/Team';
+import Team from './scenes/Team';
 // import Invoices from './scenes/Invoices';
-// import Contacts from './scenes/Contacts';
+import Contacts from './scenes/contacts';
 // import Form from './scenes/Form';
 // import Bar from './scenes/Bar';
 // import Line from './scenes/Line';
@@ -29,9 +29,9 @@ function App() {
           <main className="content">
             <TopBar />
             <Routes>
-              {/* <Route path="/" element={<Dashboard />} /> */}
-              {/* <Route path="/team" element={<Team />} /> */}
-              {/* <Route path="/contacts" element={<Contacts />} /> */}
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/team" element={<Team />} />
+              <Route path="/contacts" element={<Contacts />} />
               {/* <Route path="/invoices" element={<Invoices />} /> */}
               {/* <Route path="/form" element={<Form />} /> */}
               {/* <Route path="/pie" element={<Pie />} /> */}
