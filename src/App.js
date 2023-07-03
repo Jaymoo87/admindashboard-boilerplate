@@ -7,15 +7,15 @@ import TopBar from './scenes/global/TopBar';
 import Dashboard from './scenes/dashboard';
 import NavBar from './scenes/global/NavBar';
 import Team from './scenes/Team';
-// import Invoices from './scenes/Invoices';
+import Invoices from './scenes/invoices';
 import Contacts from './scenes/contacts';
-// import Form from './scenes/Form';
-// import Bar from './scenes/Bar';
-// import Line from './scenes/Line';
-// import Pie from './scenes/Pie';
-// import FAQ from './scenes/FAQ';
-// import Geography from './scenes/Geography';
-// import Calendar from './scenes/Calendar';
+import Form from './scenes/form';
+// import Bar from './scenes/bar';
+// import Line from './scenes/line';
+// import Pie from './scenes/pie';
+// import FAQ from './scenes/faq';
+// import Geography from './scenes/geography';
+// import Calendar from './scenes/calendar';
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -32,8 +32,8 @@ function App() {
               <Route path="/" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
               <Route path="/contacts" element={<Contacts />} />
-              {/* <Route path="/invoices" element={<Invoices />} /> */}
-              {/* <Route path="/form" element={<Form />} /> */}
+              <Route path="/invoices" element={<Invoices />} />
+              <Route path="/form" element={<Form />} />
               {/* <Route path="/pie" element={<Pie />} /> */}
               {/* <Route path="/bar" element={<Bar />} /> */}
               {/* <Route path="/line" element={<Line />} /> */}
