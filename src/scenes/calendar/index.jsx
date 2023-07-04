@@ -65,7 +65,7 @@ const AdminCalendar = () => {
               center: 'title',
               right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth',
             }}
-            backgroundColor={colors.blueAccent[200]}
+            eventBackgroundColor={colors.greenAccent[600]}
             initialView="dayGridMonth"
             editable={true}
             selectable={true}
