@@ -50,7 +50,7 @@ const GeoChart = (isDashboard = false) => {
       valueFormat=".2s"
       projectionTranslation={isDashboard ? [0.49, 0.6] : [0.5, 0.5]}
       projectionRotation={[0, 0, 0]}
-      projectionScale={!isDashboard ? 40 : 300}
+      projectionScale={isDashboard ? 150 : 300}
       borderWidth={1.5}
       borderColor="#d2cece"
       legends={
