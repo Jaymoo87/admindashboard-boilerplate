@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import formatDate from '@fullcalendar/react';
+import { formatDate } from '@fullcalendar/core';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
@@ -44,12 +44,12 @@ const AdminCalendar = () => {
         <Box flex="1 1 20%" backgroundColor={colors.primary[400]} p="15px" borderRadius="4px">
           <Typography variant="h5">Events</Typography>
           <List>
-            {currentEvents.map((e) => (
-              <ListItem key={e.id} sx={{ backgroundColor: colors.greenAccent[500] }} m="10px 0" borderRadius="2px">
+            {currentEvents.map((ev) => (
+              <ListItem key={ev.id} sx={{ backgroundColor: colors.greenAccent[500] }} m="10px 0" borderRadius="2px">
                 <ListItemText
-                  primary={e.title}
+                  primary={ev.title}
                   secondary={
-                    <Typography>{formatDate(e.start, { year: 'numeric', month: 'short', day: 'numeric' })}</Typography>
+                    <Typography>{formatDate(ev.start, { year: 'numeric', month: 'short', day: 'numeric' })}</Typography>
                   }
                 />
               </ListItem>
@@ -73,7 +73,7 @@ const AdminCalendar = () => {
             dayMaxEvents={true}
             select={handleDateClick}
             eventClick={handleEventClick}
-            eventSet={(e) => setCurrentEvents(e)}
+            eventsSet={(e) => setCurrentEvents(e)}
             initialEvents={[
               { id: '1234', title: 'All-day Event', date: '2023-07-04' },
               { id: '4321', title: 'Timed Event', date: '2023-07-06' },

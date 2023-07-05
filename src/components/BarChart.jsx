@@ -103,10 +103,10 @@ const BarChart = ({ isDashboard = false }) => {
       enableLabel={false}
       labelSkipWidth={12}
       labelSkipHeight={12}
-      labelTextColor={{
-        from: 'color',
-        modifiers: [['darker', 1.6]],
-      }}
+      // labelTextColor={{
+      //   from: 'color',
+      //   modifiers: [['darker', 1.6]],
+      // }}
       legends={[
         {
           dataFrom: 'keys',
